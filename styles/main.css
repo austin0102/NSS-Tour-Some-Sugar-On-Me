@@ -1,0 +1,67 @@
+.bookings {
+    display: flex;
+    border: 10px solid #675D50;
+    font-size: 2vw;
+    width: auto;
+    margin: 25px auto;
+    padding: 10px 250px;
+    text-align: center;
+    flex-direction: column;
+    background-color: #aBC4AA;
+    border-radius: 25px;
+    flex-wrap: nowrap;
+}
+.venues {
+    display: flex;
+    border: 10px solid #675D50;
+    float: left;
+    width: 40%;
+    margin: auto;
+    background-color: #ABC4AA;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 2vw;
+    flex-direction: column;
+    
+}
+
+.bands {
+    display: flex;
+    border: 10px solid #675D50;
+    float: right;
+    width: 40%;
+    align-items: center;
+    padding: auto;
+    margin: auto;
+    background-color: #ABC4AA;
+    border-radius: 25px;
+    text-align: left;
+    font-size: 2vw;
+    flex-direction: column;
+}
+h2 {
+    text-align: center;
+}
+
+.bottom-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+  }
+
+body {
+    background-image: url(https://www.textures4photoshop.com/tex/thumbs/sheet-music-background-with-grunge-stained-paper-thumb48.jpg);
+    color: #675D50;
+    
+}
+ h1 {
+    text-align: center;
+    border: 10px solid #675D50;
+    border-radius: 25px;
+    background-color: #aBC4AA;
+    margin: auto 30%;
+
+ }
+
