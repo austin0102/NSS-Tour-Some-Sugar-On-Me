@@ -1,8 +1,9 @@
-import { getBookings, getBands, getVenues } from "./database.js";
+import { getBookings, getBands, getVenues, getMembers } from "./database.js";
 
 const bookings = getBookings();
 const bands = getBands();
 const venues = getVenues();
+const members = getMembers();
 
 const findBand = (booking, allBands) => {
   let bandName = null;
@@ -110,12 +111,21 @@ document.addEventListener("click", (clickEvent) => {
         }
       }
     }
+
+    const theMember = [];
+    for (const member of members) {
+      if (member.bandId === parseInt(band)) {
+        const memberIfno = `${member.firstName} ${member.lastName} (${member.role})`
+        theMember.push(memberIfno);
+      }
+    }
+
     window.alert(
-      `${theBand[0]} will be playing at ${venuesBooked.join(" + ")}`
+      `${theMember.join("\n")}
+      ${theBand[0]} will be playing at ${venuesBooked.join(" + ")}`
     );
   }
 });
-
 
 document.addEventListener("click", (clickEvent) => {
   const itemClicked = clickEvent.target;
