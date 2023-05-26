@@ -121,8 +121,7 @@ document.addEventListener("click", (clickEvent) => {
     }
 
     window.alert(
-      `${theMember.join("\n")}
-      ${theBand[0]} will be playing at ${venuesBooked.join(" + ")}`
+      `${theMember.join("\n")}\n\nUpcoming shows:\n${venuesBooked.join(" \n ")}`
     );
   }
 });
